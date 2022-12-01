@@ -1,0 +1,28 @@
+# spring boot
+spring:
+  jpa:
+    database: postgresql
+  datasource:
+    url: jdbc:postgresql://localhost:5432/crm_db
+    username: javatest
+    password: password
+  sql:
+    init:
+      mode: always
+      encoding: utf-8
+  # spring boot
+  devtools:
+    restart:
+      enabled: true
+  # H2DB
+  h2:
+    console:
+      enabled: true
+  # message
+  messages:
+    basename: il8n/messages
+# Web
+#server:
+#  servlet:
+#    context-path: /api
+# Log Level
